@@ -35,20 +35,24 @@
 /* branded red */
 .jumbotron {
   margin-bottom: 0; }
-
+.hero-img{
+  margin:0 auto;
+}
 .banner {
   padding: 7rem 0;
   width: 100%; }
 
 .banner--contribute {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
 
 .banner--features {
   background-color: #373737;
   color: #b7b7b7; }
 
 .tagline {
-  margin: 0 0 3rem 0;
+  margin: 2rem 0 3rem 0;
   text-align: center; }
 
 .tagline-heading {
@@ -99,7 +103,24 @@
     height: 2px;
     background-color: #ddd;
     width: 55%; }
+footer{
+  padding: 15px
+}
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
 
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -122,6 +143,17 @@
                 <a class="navbar-brand" href="https://github.com/greenpioneersolutions/meanstackjs">Mean Stack JS</a>
             </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="https://github.com/greenpioneersolutions/meanstackjs/wiki"><span class="glyphicon glyphicon-file"></span> Documentation</a></li>
+        <li><a href="https://github.com/greenpioneersolutions/meanstackjs"><span class="glyphicon glyphicon-download"></span> Download</a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O">YouTube</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div><!-- /.navbar-collapse -->
         </div>
     </nav>
     
@@ -131,27 +163,28 @@
   <div class="container">
     <div class="row">
         <div class="col-xs-12 text-center">
-            <img src="images/logo/header.png" class="img-reponsive" >
+            <img src="images/logo/header.png" class="img-responsive hero-img">
             <hr>
         </div>
     </div>
     <div class="row  ">
-      <div class="col-sm-6 center-col text-center">
-        <h2 class="tagline">MeanStackJs How To's <a href="https://www.youtube.com/playlist?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O"> Playlist</a></h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O&autoplay=1" frameborder="0" allowfullscreen></iframe>
+      <div class="col-sm-6">
+        <h1 class="h2 tagline">MeanStackJs How To's <a href="https://www.youtube.com/playlist?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O"> Playlist</a></h1>
+        <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O&autoplay=1" frameborder="0" allowfullscreen></iframe></div>
       </div>
-      <div class="col-sm-6 center-col text-center">
+      <div class="col-sm-6 text">
         <h2 class="tagline">
           <p class="tagline-heading">Design, Develop, Test,</p>
-          <p class="tagline-subheading">1.0.0 is out now</p>
+          <p class="tagline-subheading">1.1.0 is out now</p>
         </h2>
         <p>
           We are building in this framework to make your life as a designer or developer easier. We believe in making this framework usable for User Experience Designers, Quality Assurance Engineers, Software Engineers, Frontend & Backend Developers & Full Stack Engineers... etc. We're doing this by having key features in the framework we like we listed below.
         </p>
-        <p>
-          <a class="btn btn-large btn-success" href="//github.com/greenpioneersolutions/meanstackjs">Check Out Mean Stack JS Now</a>
+        <p class="text-center">
+          <a class="btn btn-large btn-success" href="https://github.com/greenpioneersolutions/meanstackjs">Check Out Mean Stack JS Now</a>
         </p>
-        <p><strong>Usage Instructions:</strong> Make sure to do <code>NPM INSTALL</code>, <code>NODE INDEX.JS</code>. </p>
+        <p class="text-center"><strong>Usage Instructions:</strong> Make sure to do <code>NPM INSTALL</code>, <code>NODE INDEX.JS</code>. </p>
       </div>    
     </div>
   </div>
@@ -201,7 +234,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8 center-col">
+      <div class="col-sm-8 col-sm-offset-2">
         <div class="text-center">
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             View more features
@@ -264,7 +297,7 @@
 <section class="banner banner--contribute">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 center-col text-center">
+      <div class="col-sm-6 col-sm-offset-3  text-center">
         <h2 class="tagline text-center">
           <p class="tagline-heading">Constantly Being Developed</p>
           <p class="tagline-subheading">With help from people like you</p>
