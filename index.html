@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html data-ng-app="myApp" lang="en">
-
-<head>
+<html data-ng-app="myApp" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" >
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,17 +11,25 @@
     <meta name="description" content="Mean Stack JS is a open source fullstack javascript framework that was created for designers and developers">
     <link rel="shortcut icon" href="images/logo/icon.png" type="image/x-icon">
     <link rel="icon" href="images/logo/icon.png" type="image/x-icon">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@meanjsorg">
-    <meta name="twitter:title" content="Mean Stack JS">
-    <meta name="twitter:description" content="Mean Stack JS is a open source fullstack javascript framework that was created for designers and developers">
-    <meta name="twitter:image:src" content="http://meanstackjs.com/images/logo/icon.png">
-    <meta property="og:title" content="Mean Stack JS" />
-    <meta property="og:description" content="Mean Stack JS is a open source fullstack javascript framework that was created for designers and developers" />
-    <meta property="og:image" content="http://meanstackjs.com/images/logo/icon.png" />
-    <meta property="og:url" content="http://meanstackjs.com/" />
+    <meta name="og:url" content="https://meanstackjs.herokuapp.com/" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Mean Stack JS Demo" />
+    <meta name="og:description" content="Mean Stack JS was built for ease of use with javascript at its core. MeanStackJS is a full stack javascript framework that will give you the power to develop web applications" />
+    <meta name="og:image" content="http://meanstackjs.com/images/logo/header.png" />
+    <meta name="fb:app_id" content="1610630462580116" />
+    <meta name="twitter:creator" content="@greenpioneerdev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mean Stack JS Demo" />
+    <meta name="twitter:description" content="Mean Stack JS was built for ease of use with javascript at its core. MeanStackJS is a full stack javascript framework that will give you the power to develop web applications" />
+    <meta name="twitter:url" content="https://meanstackjs.herokuapp.com/" />
+    <meta name="twitter:image" content="http://meanstackjs.com/images/logo/header.png" />
+    <meta name="twitter:site" content="@meanstackjs" />
+    <meta name="author" content="Green Pioneer Solutions"/>
+    <meta name="msapplication-TileColor" content="#4A90E2"/>
+    <meta name="theme-color" content="#4A90E2"/>
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
     /* 
     Styles here should be specific to this module. It will be aggregated and compiled when the environment starts up.
@@ -146,9 +153,11 @@ footer{
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="https://github.com/greenpioneersolutions/meanstackjs"><span class="glyphicon glyphicon-download"></span> Download</a></li>
+        <li><a target="_blank" href="https://github.com/greenpioneersolutions/meanstackjs"><span class="glyphicon glyphicon-download"></span> Download</a></li>
 
-        <li><a href="https://github.com/greenpioneersolutions/meanstackjs/wiki"><span class="glyphicon glyphicon-file"></span> Documentation</a></li>
+        <li><a target="_blank" href="https://github.com/greenpioneersolutions/meanstackjs/wiki"><span class="glyphicon glyphicon-file"></span> Documentation</a></li>
+
+        <li><a target="_blank" href="hhttps://meanstackjs.herokuapp.com"><span class="glyphicon glyphicon-list-alt"></span> Demo</a></li>
         
       </ul>
 
@@ -177,7 +186,7 @@ footer{
       <div class="col-sm-6 text">
         <h2 class="tagline">
           <p class="tagline-heading">Design, Develop, Test,</p>
-          <p class="tagline-subheading">1.1.0 is out now</p>
+          <p class="tagline-subheading">1.4.0 is out now</p>
         </h2>
         <p>
           We are building in this framework to make your life as a designer or developer easier. We believe in making this framework usable for User Experience Designers, Quality Assurance Engineers, Software Engineers, Frontend & Backend Developers & Full Stack Engineers... etc. We're doing this by having key features in the framework we like we listed below.
@@ -225,12 +234,12 @@ footer{
           <div class="feature-text">Simple Project Structure</div>
         </div>
         <div class="feature">
-          <i class="feature-icon fa fa-tasks"></i>
-          <div class="feature-text">Supports Clustering</div>
+          <i class="feature-icon fa fa-id-card-o"></i>
+          <div class="feature-text">SEO check out the demo to see (new)</div>
         </div>
         <div class="feature">
           <i class="feature-icon fa fa-cloud-upload"></i>
-          <div class="feature-text">Docker (New)</div>
+          <div class="feature-text">Docker</div>
         </div>
       </div>
     </div>
@@ -250,8 +259,8 @@ footer{
               <li>Not Dependent on Grunt or Gulp</li>
               <li>No Magic Wand</li>
               <li>UI framework agnostic - Use Boostrap , Materialize or Foundation</li>
-              <li>Swagger.io (New)</li>
-              <li>Babel(New)</li>
+              <li>Swagger.io</li>
+              <li>Babel</li>
                   </ul> 
                     </div>
                 </div>
