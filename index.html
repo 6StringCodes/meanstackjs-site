@@ -7,8 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Mean Stack JS</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta name="keywords" content="MEAN, MEANSTACKJS, mongodb, expressjs, angularjs,nodejs, javascript,fullstack">
-    <meta name="description" content="Mean Stack JS is an enterprise ready full stack JavaScript solution using MongoDB, ExpressJs, AngularJs, and NodeJs. Providing a simple project structure to quickly build prototypes into production ready applications for modern agile development teams.">
+    <meta name="keywords" content="MEAN, MEANSTACKJS, mongodb, expressjs, angularjs,nodejs, javascript, fullstack">
+    <meta name="description" content="Mean Stack JS is an enterprise full stack JavaScript solution using MongoDB, ExpressJs, AngularJs and NodeJs. Providing a simple project structure to build prototypes into production ready applications.">
     <link rel="shortcut icon" href="images/logo/icon.png" type="image/x-icon">
     <link rel="icon" href="images/logo/icon.png" type="image/x-icon">
     <meta name="og:url" content="https://meanstackjs.com/" />
@@ -46,11 +46,13 @@
   margin:0 auto 30px;
 }
 .banner {
-  padding: 7rem 0;
+  padding: 6rem 0;
   width: 100%; }
-
+.banner.banner--intro{
+  margin-top: 50px;
+}
 .banner--contribute {
-  background-color: #f8f8f8;
+  background-color: #e5e5e5;
   margin-bottom: 20px;
 }
 
@@ -128,6 +130,15 @@ footer{
   width:100%;
   height:100%;
 }
+
+@media (max-width: 767px){
+  .video-container{
+    position: initial;
+  }
+  .video-container iframe, .video-container object, .video-container embed{
+    padding: 0 15px;
+  }
+}
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -175,48 +186,40 @@ footer{
   <div class="container">
     <div class="row">
         <div class="col-xs-12 text-center">
-            <img src="images/logo/header.png" class="img-responsive hero-img">
+            <img src="images/logo/header.png" class="img-responsive hero-img" alt="Mean Stack Js logo">
+            <h1 class="h2">An Enterprise Ready Full Stack JavaScript Solution</h1>
         </div>
         <div class="col-md-8 col-md-offset-2 text-center">
           <p class="lead">
-              An enterprise ready full stack JavaScript solution using MongoDB, ExpressJs, AngularJs, and NodeJs. Providing a simple project structure to quickly build prototypes into production ready applications for modern agile development teams.
+              A JavaScript technology stack using MongoDB, ExpressJs, AngularJs, and NodeJs. Providing a simple project structure to quickly build prototypes into production ready applications for modern agile development teams.
           </p>
         <hr>
         </div>
         
     </div>
-    <div class="row  ">
-      <div class="col-sm-6">
-        <h1 class="h2 tagline">MeanStackJs How To's <a href="https://www.youtube.com/playlist?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O"> Playlist</a></h1>
-        <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O" frameborder="0" allowfullscreen></iframe></div>
-      </div>
-      <div class="col-sm-6 text">
-        <h2 class="tagline">
-          <p class="tagline-heading">Design, Develop & Test</p>
-          <p class="tagline-subheading">1.4.0 is out now</p>
-        </h2>
+    <div class="row">
+      <div class="col-xs-12">
         <p class="text-center">
-          <a class="btn btn-lg btn-success" href="https://github.com/greenpioneersolutions/meanstackjs">Check Out Mean Stack JS Now</a>
+          <a class="btn btn-lg btn-success" href="https://github.com/greenpioneersolutions/meanstackjs">Download v1.6.0 Now</a>
         </p>
         <p class="text-center"><strong>Usage Instructions:</strong> Make sure to do <code>NPM INSTALL</code>, <code>NODE INDEX.JS</code>. </p>
-      </div>    
+      </div>   
     </div>
   </div>
 </section>
 <section class="banner banner--features">
-  <h2 class="tagline">
-    <p class="tagline-heading tagline-heading--light">Everything You Need</p>
-    <p class="tagline-subheading tagline-subheading--light">Right out of the box</p>
-  </h2>
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <p class="lead">These features help make the software development process simple and scalable. Our intent is to make it easy for the whole team to run the application locally so that they can review and devlop the code/application. While verstile and robust enough to speed up the agile process building quick protoypes to production ready code.</p>
-    </div>
-  </div>
-  
 
   <div class="container">
+    <div class="row">
+      <h2 class="tagline">
+        <p class="tagline-heading tagline-heading--light">Everything You Need</p>
+        <p class="tagline-subheading tagline-subheading--light">Right out of the box</p>
+      </h2>
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="lead">These features help make the software development process simple and scalable. Our intent is to make it easy for the whole team to run the application locally so that they can review and devlop the code/application. While verstile and robust enough to speed up the agile process building quick protoypes to production ready code.</p>
+        </div>
+  
+    </div>
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
         <div class="feature">
@@ -340,8 +343,19 @@ footer{
         </pre>
 
       </div>
+      <div class="col-xs-12">
+        <h2 class="h2 tagline">MeanStackJs How To's <a href="https://www.youtube.com/playlist?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O"> Playlist</a></h2>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhJ-Q2setTdqgwW6U39s_oMAehgtXa15O" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
   </div>
-
+  </div>
+</section>
+<section id="code">
+  <div class="container">
     <div class="row">
       
       <div class="col-sm-6 col-sm-offset-3  text-center">
@@ -350,14 +364,11 @@ footer{
           <p class="tagline-subheading">With help from people like you</p>
         </h2>
         <p>
-          Those are just some of the reasons why we believe using mean stack js will help you in your development. What we want to do moving forward with this project is to layout a road map so that you can give your thoughts and let us know what we can add to make your life easier with this framework. We welcome all of those who wish to contribute and be a part of this. Join us in building and using the newest style in mean stacks.
+          Those are just some of the reasons why we believe using mean stack js will help you in your JavaScript development. What we want to do moving forward with this project is to layout a road map so that you can give your thoughts and let us know what we can add to make your life easier with this framework. We welcome all of those who wish to contribute and be a part of this. Join us in building and using the newest style in mean stacks.
         </p>
         <a class="btn btn-large btn-primary" href="//github.com/greenpioneersolutions/meanstackjs/blob/master/CONTRIBUTING.md">Contribute to Mean Stack JS</a>
       </div>    
     </div>
-  </div>
-</section>
-<section id="code">
         <div class="container" ng-init="findOne()">
             <div class="row">
                 <div class="text-center"> Check us out on GitHub<a href="https://github.com/greenpioneersolutions/meanstackjs"> <i class="fa fa-github fa-5x"></i></a> </div>
@@ -389,9 +400,10 @@ footer{
                 </table>
             </div>
         </div>
-    </section>
+  </div>    
+</section>
     <footer>
-        <p>&copy; 2015 Green Pioneer Solutions</p>
+        <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Green Pioneer Solutions</p>
     </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
